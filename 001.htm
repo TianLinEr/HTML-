@@ -1,0 +1,156 @@
+<HTML>
+<HEAD>
+    <meta lang="zh-cn">
+    <meta charset="utf-8">
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE>我的第一个网页</TITLE>
+</HEAD>
+<BODY>
+
+    学习使我快乐
+
+    <h1 id="one">1.标题标签： h1  到  h6</h1>
+    <h1> 一级标题 </h1>
+    ……  一级最重要，依次递减
+    <h6> 六级标题 </h6>
+
+    <h1>2.段落标签：</h1>
+    <p>分段</p>
+    <p>happy</p>
+
+    <h1>3.强制换行标签：<br /></h1>
+    换<br />行
+
+    <h1>4.文本格式化标签</h1>
+    <h3>a.文字加粗标签：<strong>加</strong>或<b>粗</b></h3>
+    推荐使用strong
+    <h3>b.文字倾斜标签：<em>倾</em>或<i>斜</i></h3>
+    推荐em
+    <h3>c.文字删除线标签：<del>删</del>或<s>除</s></h3>
+    推荐del
+    <h3>d.文字下划线标签：<ins>下</ins>或<u>划</u></h3>
+    推荐ins
+
+    <h1>5.html常用标签：div和span</h1>
+    <div>用来装东西</div><span>无语义</span>
+    PS：div一行只能放一个，span一行可以有多个
+
+    <h1>6.图像标签和路径</h1>
+    <h3>a.图像标签：img</h3>
+    <img src="01.jpeg" />
+    <h3>b.文字替换：alt</h3>
+    <div>当图片显示不出来时，显示后面的文字</div>
+    <img src="02.jpeg" alt="星空" />
+    <h3>c.提示文本：title</h3>
+    <div>鼠标放在图片上时，提示的文字</div>
+    <img src="01.jpeg" title="我是提示" />
+    <h3>d.设置图像大小：width（宽度），height（长度），border（图像边框粗细）</h3>
+    <div>PS：一般只修改宽度和长度其中之一，另一个会自动成比例缩放(单位都是像素)</div>
+    <div>一般在css中设定边框</div>
+    <img src="01.jpeg" width="640" height="480 " border="8" />
+    <h3>e.路径</h3>
+    <div>同一级文件夹，即图片与文件在同一文件夹里，则直接写名字</div>
+    <div>上一级文件夹，即图片与存放文件的文件夹在同一文件夹里，则写../再写名字，可多次使用</div>
+    <div>下一级文件夹，即存放图片的文件夹与文件在同一文件夹里，则先写文件夹的名字，在写/和名字</div>
+
+    <h1>7.超链接标签：a</h1>
+    <h3>a.外部链接</h3>
+    <a href="https://www.baidu.com/" target="_blank">百度</a>
+    <div>href写网址，target写打开方式，self是在原网页打开，blank是在新窗口打开</div>
+    <h3>b.内部链接</h3>
+    <a href="002案例.htm">案例</a>
+    <div>href写路径，其他一样，默认打开方式是self</div>
+    <div>PS：空链接，即在href后写#</div>
+    <h3>c.下载链接</h3>
+    <div>即href后面的地址是一个文件或者压缩包，则点击后会下载这个文件</div>
+    <h3>PS：其他元素也可以加超链接，如音乐，图片，视频等</h3>
+    <a href="002案例.htm"><img src="01.jpeg" /></a>
+    <h3>d.锚点链接</h3>
+    <div>即快速的去往页面的某个位置</div>
+    <div>用法：在href后面写#+名字（随便取），然后再想去往的位置加上id=名字</div>
+    <a href="003案例.htm">案例</a>
+
+    <h1>8.注释符号和特殊字符</h1>
+    <!--我不想显示-->
+    特殊字符网上查找
+
+    <h1>9.表格标签</h1>
+    <table>
+        <!--表格属性网上查找，不推荐使用--><!--最大的表格标签-->
+        <thead>
+            <tr>
+                <!--行-->
+                <th>表头单元</th><!--文字会居中加粗-->
+                <th>单元格内的文字</th><!--单元格-->
+                <th>第二个单元格</th>
+                ……
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>第二行</td>
+                ……
+            </tr>
+            ……
+        </tbody>
+    </table>   
+    <div>当表格数据较多时，可以把表格分成表头和主体两部分，加上thead和tbody</div>
+    <div>PS：也可以不加，两者无语义</div>
+    <h3>合并单元格：rowspan(跨行合并)，colspan(跨列合并)</h3>
+    <a href="004案例.htm">案例</a>
+    
+    <h1>10.列表标签</h1>
+    <h3>a.无序列表</h3>
+    <ul><!--无序列表标签-->
+        <li>百度</li><!--每一条文字-->
+        <li>腾讯</li><!--li里可以放任意元素，如音乐，图片等，也可以添加其他标签-->
+        ……
+    </ul>
+    <h3>b.有序列表</h3>
+    <ol><!--有序列表标签-->
+        <li>同上</li>
+        ……
+    </ol>
+    <h3>c.自定义列表</h3>
+    <dl><!--自定义列表标签-->
+        <dt>名词</dt>
+        <dd>解释上面的名词</dd>
+        <dd>解释上面的名词</dd>
+        <dd>解释上面的名词</dd>
+        ……
+    </dl>
+
+    <h1>11.表单标签</h1>
+    <h3>a.表单域标签：form</h3>
+    <form action="" name="" method="get">
+        <!--action 把信息提交到处理数据的地址     name 表单的名字，用于区分    method 提交数据的方式-->
+        表单元素
+    </form>
+    <h3>b.表单元素</h3>
+    <a href="005案例.htm">案例</a>
+    <h3>c.下拉表单：select</h3>
+    <form>
+        请选择：
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option selected="selected">选项三</option>
+            <!--当在选项中加上selected后，即默认选择该项-->
+            <option>……</option>
+        </select>
+    </form>
+    <h3>d.文本域标签：textarea</h3>
+    <!--当需要输入的文字较多时，可以使用该标签-->
+    <form>
+        输入：
+        <textarea cols="40" rows="4">
+            <!--cols是每行显示的文字个数，rows是显示的文字行数-->
+            <!--PS：但是一般不使用-->
+            这里是默认显示的文字
+        </textarea>
+    </form>
+
+    <a href="006案例.htm"><h1>最终案例</h1></a>
+
+</BODY>
+</HTML>

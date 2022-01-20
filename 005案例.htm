@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+    <meta lang="zh-cn"/>
+    <meta charset="utf-8"/>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE>005案例</TITLE>
+</HEAD>
+<BODY>
+    <form>
+        <!--name和value 是必需要写的，便于后台处理数据-->
+        <!--name 是input的另一属性，可以任意取名，方便后台的数据传输-->
+        用户名：<input type="text" name="username" /><!--text 输入文本，显示文字--><br />
+        密码：<input type="password" /><!--password 隐藏输入的文字--><br />
+        <!--PS：实现多选一时，需要为这多项选择取相同的名字，但要写上不同的value值-->
+        性别：男<input type="radio" name="005" value="男" /> 女<input type="radio" name="005" value="女" /> 人妖<input type="radio" name="005" value="人妖" />
+        <!--radio 单选框，可实现多选-->
+        <br />爱好：吃饭<input type="checkbox" name="006" value="吃饭" /> 睡觉<input type="checkbox" name="006" value="睡觉" /> 打豆豆<input type="checkbox" name="006" value="打豆豆" />
+        <!--也要写上名字，便于后台接收，value也是同理-->
+        <br /><!--checkbox 复选框，实现多选-->
+        <!--value 后面写默认显示的值-->
+        年龄：<input type="text" value="用阴历算" /><br />
+        <!--checked 默认勾选,可用于单选和复选框-->
+        <input type="checkbox" name="007" value="已确认" checked="checked" />我已阅读相关规定<br />
+        <!--maxlength 可以输入的最长字符-->
+        性格：<input type="text" name="性格" value="性格" maxlength="50" /><br />
+        <!--submit 提交按钮，将数据提交给后台-->
+        <input type="submit" value="免费注册"/><br />
+        <!--reset 重置按钮-->
+        <input type="reset" value="重新填写"/><br />
+        <!--button 普通按钮，必需通过value赋值-->
+        <input type="button" value="获取验证码"/><br />
+        <!--上传文件-->
+        <input type="file"/><br />
+        <!--lable 搭配其他标签使用，便于选择-->
+        <!-- id 和后面的 for 的值必需相同-->
+        <input type="radio" id="nan"/><label for="nan">男</label>
+    </form>
+
+
+</BODY>
+</HTML>
